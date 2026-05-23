@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <defs>
+    <linearGradient id="leafA" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#5ff5a0"/>
+      <stop offset="55%" stop-color="#3ddc84"/>
+      <stop offset="100%" stop-color="#1f9d5f"/>
+    </linearGradient>
+  </defs>
+  <rect x="2" y="2" width="60" height="60" rx="16" fill="#063226"/>
+  <!-- big hero leaf filling the tile -->
+  <path d="M32 8 C16 13 9 27 10 45 C10 49 13 53 17 53 C36 55 53 42 55 21 C55.5 16 52 11 47 10 C42 8.5 37 8 32 8 Z" fill="url(#leafA)"/>
+  <!-- central vein -->
+  <path d="M16 51 C26 40 38 28 49 16" fill="none" stroke="#0a3d2e" stroke-width="2.6" stroke-linecap="round" opacity="0.5"/>
+  <!-- side veins -->
+  <path d="M24 46 L31 39 M32 38 L38 32 M40 31 L45 26 M22 38 L28 33" fill="none" stroke="#0a3d2e" stroke-width="2" stroke-linecap="round" opacity="0.4"/>
+  <!-- dollar sign on top, centered -->
+  <text x="32" y="42" font-family="Georgia, serif" font-size="30" font-weight="700" fill="#063226" text-anchor="middle" opacity="0.92">$</text>
+</svg>
