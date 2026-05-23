@@ -39,53 +39,7 @@ npm run build    # output goes to dist/
 npm run preview  # preview the production build locally
 ```
 
-## 🌍 Publish to GitHub Pages
 
-This repo ships with a GitHub Actions workflow that **builds and deploys automatically**. To turn it on:
-
-1. Push this project to a GitHub repository (see below).
-2. In your repo, go to **Settings → Pages**.
-3. Under **Build and deployment → Source**, choose **GitHub Actions**.
-4. That's it. Every push to the `main` branch rebuilds and publishes the site.
-
-Your site will be live at:
-
-```
-https://<your-username>.github.io/<your-repo-name>/
-```
-
-The workflow automatically sets the correct base path from your repo name, so assets and the favicon load properly.
-
-> **Prefer a one-off manual deploy?** Run `VITE_BASE="/<your-repo-name>/" npm run build`, then `npm run deploy` (uses the `gh-pages` branch). The GitHub Actions route above is recommended and needs no extra steps.
-
-### First push to GitHub
-
-```bash
-git init
-git add .
-git commit -m "Initial commit: Verdant bill tracker"
-git branch -M main
-git remote add origin https://github.com/<your-username>/<your-repo-name>.git
-git push -u origin main
-```
-
-## 📁 Project structure
-
-```
-billtracker/
-├── public/
-│   ├── favicon.svg         # main vector favicon (leaf + coin)
-│   ├── favicon-32.png      # PNG fallback for older browsers
-│   └── favicon-180.png     # apple-touch-icon
-├── src/
-│   ├── App.jsx             # the whole app (dashboard, list, charts, modal)
-│   ├── index.css           # botanical-green design system
-│   └── main.jsx
-├── .github/workflows/
-│   └── deploy.yml          # auto-deploy to GitHub Pages
-├── index.html              # favicon + meta tag setup
-└── vite.config.js          # base-path config for Pages
-```
 
 ## 🔒 A note on your data
 
@@ -94,7 +48,3 @@ Verdant stores everything in your browser's `localStorage`. That means:
 - Your bills are visible only on the device and browser where you entered them.
 - Clearing your browser data, or using a different browser/device, starts you fresh.
 - **Use the Export button regularly** to keep a backup JSON file you can re-import anytime.
-
-## 📄 License
-
-MIT — see [LICENSE](LICENSE). Free to use, modify, and share.
